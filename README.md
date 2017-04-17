@@ -10,7 +10,10 @@
   class myComponent extends React.Component {}
   ```
   ?
-  - **A:** for a quick-and-dirty rundown, see [here](https://toddmotto.com/react-create-class-versus-component/).
+  - **A:** for a quick-and-dirty rundown, see [here](https://toddmotto.com/react-create-class-versus-component/).  Meanwhile, in the interest of time the older style will be used for this tutorial.
+* **WHAT** are the differences between setting up React modules and Angular ones?  Do I need something like the `index.js` file to tell the server where to go for what? 
+  - **A:** see [this repo](https://github.com/cfpdx-401d5/class-work/tree/master/week06_front-end-SPA/mar02_react-components/hello-react) for an example setup...
+  - ...and then start over using [Create React App](https://github.com/facebookincubator/create-react-app)!
 
 ## TERMS AND CONCEPTS
 * **props:** data object containing dynamic values to be updated when component does so
