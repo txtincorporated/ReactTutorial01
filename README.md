@@ -6,10 +6,10 @@
 ## NOTES AND QUESTIONS
 * **NOTE** that JSXTransform is no longer supported by Facebook and has been deprecated since 2015.  They recommend using Babel instead.
 * **WHAT** are the pros and cons of using the old style `var MyComponent = React.createClass();` syntax as in this tutorial as opposed to the more ES6-y 
-```javascript
-class myComponent extends React.Component {}
-```
-?
+  ```javascript
+  class myComponent extends React.Component {}
+  ```
+  ?
   - **A:** for a quick-and-dirty rundown, see [here](https://toddmotto.com/react-create-class-versus-component/).
 
 ## TERMS AND CONCEPTS
