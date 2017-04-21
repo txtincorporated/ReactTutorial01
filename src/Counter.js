@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Counter = React.createClass({
-  incrementCount: function() {
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+    this.incrementCount = this.incrementCount.bind(this);
+  }
+
+  incrementCount() {
     this.setState({
       count: this.state.count + 1
     });
-  },
+  }
 
-  getInitialState: function() {
-    return {
-      count: 0
-    };
-  }, 
-  render: function() {
+  render() {
     return (
       <div className='counter'>
         <h1>Count:  {this.state.count}</h1>
@@ -20,6 +21,6 @@ const Counter = React.createClass({
       </div>
     );
   }
-});
+};
 
 export default Counter;
