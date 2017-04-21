@@ -22,4 +22,4 @@ const Counter = React.createClass({
   }
 });
 
-React.renderComponent(<Counter />, document.getElementById('app-root'));
+export default Counter;
