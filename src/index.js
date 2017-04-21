@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+
+import Counter from './Counter';
+
+let app = <Counter />;
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  <div>{app}</div>,
+  document.getElementById('app-root')
+
 );

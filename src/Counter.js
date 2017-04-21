@@ -1,8 +1,7 @@
-
-/** @jsx React.DOM*/
+import React from 'react';
 
 const Counter = React.createClass({
-  incrementCoutn: function() {
+  incrementCount: function() {
     this.setState({
       count: this.state.count + 1
     });
@@ -14,12 +13,13 @@ const Counter = React.createClass({
     };
   }, 
   render: function() {
-    return(
-      <div>
+    return (
+      <div className='counter'>
         <h1>Count:  {this.state.count}</h1>
-
+        <button type='button' onClick={this.incrementCount}>Increment</button>
       </div>
     );
   }
 });
 
+export default Counter;
