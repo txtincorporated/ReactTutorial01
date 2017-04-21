@@ -14,11 +14,12 @@ const Counter = React.createClass({
   }, 
   render: function() {
     return (
-      <div>
+      <div className='counter'>
         <h1>Count:  {this.state.count}</h1>
-
+        <button type='button' onClick={this.incrementCount}>Increment</button>
       </div>
     );
   }
 });
 
+React.renderComponent(<Counter />, document.getElementById('app-root'));
