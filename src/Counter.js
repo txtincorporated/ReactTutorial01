@@ -1,7 +1,4 @@
-
 import React from 'react';
-
-/** @jsx React.DOM*/
 
 const Counter = React.createClass({
   incrementCount: function() {
