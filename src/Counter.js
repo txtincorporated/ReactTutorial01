@@ -5,11 +5,13 @@ class Counter extends Component {
     super(props);
     this.state = { count: 0 };
     this.incrementCount = this.incrementCount.bind(this);
+
   }
 
   incrementCount() {
     this.setState({
       count: this.state.count + 1
+
     });
   }
 
@@ -17,8 +19,9 @@ class Counter extends Component {
     return (
       <div className='counter'>
         <h1>Count:  {this.state.count}</h1>
-        <button type='button' onClick={this.incrementCount}>Increment</button>
+        <button type='button' onClick={this.incrementCount}>Increment</button>        
       </div>
+      
     );
   }
 };
