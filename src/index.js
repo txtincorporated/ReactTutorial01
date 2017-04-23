@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import Counter from './Counter';
 import FilteredList from './List';
 
+require('./index.css');
+
 let app = <Counter />;
 
 // Toggle on to see filtered list app instead of counter
