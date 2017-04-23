@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+require('./List.css');
+
 class List extends Component {
   render() {
     return (
@@ -52,7 +54,7 @@ class FilteredList extends Component {
 
   render() {
     return (
-      <div className='list'>
+      <div className='filter-list'>
         <input type='text' placeholder='Search' onChange={this.filterList}/>
         <List items={ this.state.items }/>        
       </div>

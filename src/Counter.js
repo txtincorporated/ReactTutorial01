@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+require('./Counter.css');
+
 class Counter extends Component {
   constructor(props) {
     super(props);
